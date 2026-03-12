@@ -86,3 +86,40 @@
 
             <div class="reports-table-container">
               <h3 class="reports-table-container__title">Posts per User</h3>
+              <table class="reports-table" id="posts-per-user-table">
+                <thead class="reports-table__head">
+                  <tr class="reports-table__row reports-table__row--header">
+                    <th class="reports-table__cell reports-table__cell--header">
+                      User ID
+                    </th>
+                    <th class="reports-table__cell reports-table__cell--header">
+                      Post Count
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="reports-table__body" id="posts-per-user-body">
+                  <!-- User stats will be rendered here -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Comments Modal -->
+    <div id="comments-modal" class="comments-modal comments-modal--hidden">
+      <div class="comments-modal__overlay"></div>
+      <div class="comments-modal__panel">
+        <div class="comments-modal__header">
+          <h3 class="comments-modal__title">Comments</h3>
+          <button class="comments-modal__close" id="close-modal">
+            &times;
+          </button>
+        </div>
+        <div class="comments-modal__content" id="comments-content">
+          <!-- Comments will be rendered here -->
+        </div>
+      </div>
+    </div>
+  </body>
