@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CSG Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <header class="app__header">
+        <nav class="nav">
+          <h1 class="nav__title">Post Report App</h1>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#posts" class="nav__link" data-view="posts">Posts</a>
+            </li>
+            <li class="nav__item">
+              <a href="#reports" class="nav__link" data-view="reports"
+                >Reports</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="app__main">
+      </main>
+
+      <div id="comments-modal" class="comments-modal">
+        <div class="comments-modal__overlay"></div>
+        <div class="comments-modal__panel">
+          <div class="comments-modal__header">
+            <h2 class="comments-modal__title">Comments</h2>
+            <button
+              class="comments-modal__close"
+              aria-label="Close comments"
+            >
+              &times;
+            </button>
+          </div>
+          <div class="comments-modal__content"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
