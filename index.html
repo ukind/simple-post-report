@@ -27,23 +27,62 @@
       </header>
 
       <main class="app__main">
-      </main>
-
-      <div id="comments-modal" class="comments-modal">
-        <div class="comments-modal__overlay"></div>
-        <div class="comments-modal__panel">
-          <div class="comments-modal__header">
-            <h2 class="comments-modal__title">Comments</h2>
-            <button
-              class="comments-modal__close"
-              aria-label="Close comments"
-            >
-              &times;
-            </button>
+        <!-- Posts View -->
+        <section id="posts-view" class="posts-view view--hidden">
+          <div class="posts-view__header">
+            <h2 class="posts-view__title">Posts</h2>
+            <div class="search-controls">
+              <input
+                type="text"
+                id="search-input"
+                class="search-controls__input"
+                placeholder="Search by title or body..."
+              />
+              <button id="search-button" class="search-controls__button">
+                Search
+              </button>
+            </div>
           </div>
-          <div class="comments-modal__content"></div>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+
+          <div class="posts-view__content">
+            <table class="posts-table" id="posts-table">
+              <thead class="posts-table__head">
+                <tr class="posts-table__row posts-table__row--header">
+                  <th class="posts-table__cell posts-table__cell--header">
+                    ID
+                  </th>
+                  <th class="posts-table__cell posts-table__cell--header">
+                    Title
+                  </th>
+                  <th class="posts-table__cell posts-table__cell--header">
+                    Body
+                  </th>
+                  <th class="posts-table__cell posts-table__cell--header">
+                    User ID
+                  </th>
+                  <th class="posts-table__cell posts-table__cell--header">
+                    Actions
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="posts-table__body" id="posts-table-body">
+                <!-- Posts will be rendered here -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Reports View -->
+        <section id="reports-view" class="reports-view view--hidden">
+          <div class="reports-view__header">
+            <h2 class="reports-view__title">Reports</h2>
+          </div>
+
+          <div class="reports-view__content">
+            <div class="reports-summary">
+              <h3 class="reports-summary__title">Rerum Count</h3>
+              <p class="reports-summary__value" id="rerum-count">0</p>
+            </div>
+
+            <div class="reports-table-container">
+              <h3 class="reports-table-container__title">Posts per User</h3>
