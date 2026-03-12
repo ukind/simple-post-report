@@ -1,0 +1,84 @@
+{
+  "posts": [
+    {
+      "userId": 101,
+      "id": 1,
+      "title": "Understanding async flows in vanilla JavaScript",
+      "body": "Modern frontends often depend on multiple HTTP calls.\nDesigning a clear async flow helps prevent subtle race conditions and hidden rerum bugs."
+    },
+    {
+      "userId": 101,
+      "id": 2,
+      "title": "Why small, focused components still matter without frameworks",
+      "body": "Even without React or Vue, you can structure your code into small modules.\nThis keeps DOM logic readable and avoids rerum style regressions when features grow."
+    },
+    {
+      "userId": 102,
+      "id": 3,
+      "title": "Designing a search experience for posts",
+      "body": "Search should be resilient to casing, partial matches, and empty inputs.\nA good UX makes it obvious when no results are found and prevents the feeling of rerum emptiness."
+    },
+    {
+      "userId": 102,
+      "id": 4,
+      "title": "Reporting on posts per user",
+      "body": "Aggregating posts per user is a great use case for reduce.\nIt also shows how business logic should live outside rerum DOM rendering code."
+    },
+    {
+      "userId": 103,
+      "id": 5,
+      "title": "Error, loading, and empty states in UI",
+      "body": "Production-quality UIs always show clear feedback.\nLoading spinners, inline errors, and rerum empty states build user trust."
+    },
+    {
+      "userId": 103,
+      "id": 6,
+      "title": "Keeping testable boundaries between layers",
+      "body": "Separate data access, business rules, and pure rendering.\nThis lets you add tests that guard against rerum accidental breaking changes."
+    }
+  ],
+  "comments": [
+    {
+      "postId": 1,
+      "id": 1,
+      "name": "Code Reviewer Alpha",
+      "email": "alpha.reviewer@example.com",
+      "body": "Nice breakdown of async flows.\nI like that you mention race conditions and rerum style bugs explicitly."
+    },
+    {
+      "postId": 1,
+      "id": 2,
+      "name": "Curious Developer",
+      "email": "curious.dev@example.com",
+      "body": "Do you prefer async and await over raw promises in this rerum style scenario?"
+    },
+    {
+      "postId": 3,
+      "id": 3,
+      "name": "UX Enthusiast",
+      "email": "ux.enthusiast@example.com",
+      "body": "The point about empty search results is spot on.\nMany apps ignore rerum edge cases like this."
+    },
+    {
+      "postId": 4,
+      "id": 4,
+      "name": "Data Engineer Beta",
+      "email": "data.beta@example.com",
+      "body": "Using reduce for aggregation keeps the logic compact.\nIt also keeps rerum reporting code easy to test."
+    },
+    {
+      "postId": 5,
+      "id": 5,
+      "name": "Product Manager",
+      "email": "pm@example.com",
+      "body": "Clear loading and error states have a big impact on perceived quality.\nRerum subtle details like this matter a lot."
+    },
+    {
+      "postId": 6,
+      "id": 6,
+      "name": "QA Specialist",
+      "email": "qa@example.com",
+      "body": "I appreciate the emphasis on tests.\nRerum regression bugs often come from untested boundaries between layers."
+    }
+  ]
+}
